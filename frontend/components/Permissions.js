@@ -117,7 +117,7 @@ class UserPermissions extends React.Component {
                       type="checkbox"
                       checked={this.state.permissions.includes(permission)}
                       value={permission}
-                      onChange={this.handlePermissionChange }
+                      onChange={this.handlePermissionChange}
                     />
                   </label>
                 </td>
