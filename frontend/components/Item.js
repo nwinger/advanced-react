@@ -7,6 +7,8 @@ import PriceTags from './styles/PriceTag';
 import PriceTag from './styles/PriceTag';
 import formatMoney from '../lib/formatMoney';
 import DeleteItem from './DeleteItem';
+import AddToCart from './AddToCart';
+
 class Item extends Component {
   render() {
     const { item } = this.props;
@@ -28,10 +30,10 @@ class Item extends Component {
 
         <div className="buttonList">
           <Link href={{ pathname: 'update', query: { id: item.id } }}>
-            <a>Edit</a>
+            <a>Edit 📃</a>
           </Link>
-          <button>Add To Cart</button>
-          <DeleteItem id={item.id}>Delete This Item</DeleteItem>
+          <AddToCart id={item.id} />
+          <DeleteItem id={item.id}>Delete This Item 🚮</DeleteItem>
         </div>
       </ItemStyles>
     );
